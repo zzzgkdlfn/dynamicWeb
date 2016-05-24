@@ -21,6 +21,8 @@ public class GradeController {
 		this.gradeService = gradeService;
 	}
 
+	
+	//년도, 학기별 jsp
 	@RequestMapping("2010/1")
 	public String show2010_1(Model model) {
 		List<Grade> grades = gradeService.getCurrent(2010, 1);
@@ -63,6 +65,7 @@ public class GradeController {
 		return "2015_2";
 	}
 	
+	//수강삭제
 	@RequestMapping("deleteGrade")
 	public String deleteGrade(Model model) {
 		List<Grade> grades = gradeService.getAllCurrent();
@@ -105,8 +108,7 @@ public class GradeController {
 		return "deleteGrade";
 	}
 	
-	
-
+	//수강신청
 	@RequestMapping("/createGrade")
 	public String showGrade(Model model) {
 
@@ -151,7 +153,7 @@ public class GradeController {
 
 	}
 
-
+	//수강신청 후 뷰
 	@RequestMapping("addDB")
 	public String addDB(@RequestParam("subject") String subject,
 			@RequestParam("subjectCode") String subjectCode,
@@ -204,7 +206,7 @@ public class GradeController {
 		return "addDB";
 	}
 
-	//년도, 학기 교과목 교과코드
+	//수강 삭제후 jsp
 	@RequestMapping("deleteDB")
 	public String deleteDB( @RequestParam("subjectCode") String subjectCode,
 			@RequestParam("subject") String subject,

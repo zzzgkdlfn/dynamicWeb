@@ -2,13 +2,13 @@ package kr.ac.hansung.dao;
 
 public class Grade {
 
-	private int year;	//?ˆ˜ê°•ë…„?„
-	private int semester;	//?•™ê¸?
-	private String subject; //êµê³¼ëª?
-	private String subjectCode; //êµê³¼ì½”ë“œ
-	private String part; //êµ¬ë¶„
-	private int credit;	//?•™? 
-	private String grade; //?„±? 
+	private int year;	//?¼ö°­³âµµ
+	private int semester;	//ÇĞ±â
+	private String subject; //±³°ú¸í
+	private String subjectCode; //±³°úÄÚµå
+	private String part; //±¸ºĞ
+	private int credit;	//?¼ºÀû
+	private String grade; //ÇĞÁ¡
 	
 	
 	public Grade() {
